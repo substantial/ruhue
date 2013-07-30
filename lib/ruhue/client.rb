@@ -53,6 +53,10 @@ class Ruhue::Client
     hue.put(url(path), data)
   end
 
+  def delete(path)
+    hue.delete(url(path))
+  end
+
   protected
 
   def url(path)
